@@ -1,0 +1,23 @@
+Blade: Chi best available gear set.
+
+    main  Heishi Shorinken R15                              
+     sub  Kunimitsu R25                                     
+  ranged  Empty                                             
+    ammo  Seeth. Bomblet +1 R15                             
+    head  Mochizuki Hatsuburi +3                            
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Nyame Flanchard R25                               
+    feet  Nyame Sollerets R25                               
+    neck  Fotia Gorget                                      
+   waist  Orpheus's Sash                                    
+    ear1  Moonshade Earring                                 
+    ear2  Lugra Earring +1 R15 (day)                        
+   ring1  Gere Ring                                         
+   ring2  Epaminondas's Ring                                
+    back  Andartia's Mantle STR WSD                         
+
+WS TP Range: [1500,1800]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Chi          15990      73092      73089     138125

@@ -1,0 +1,23 @@
+Tachi: Kasha best available gear set.
+
+    main  Hachimonji                                        
+     sub  Alber Strap                                       
+  ranged  Empty                                             
+    ammo  Crepuscular Pebble                                
+    head  Mpaca's Cap R25                                   
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Mpaca's Hose R25                                  
+    feet  Nyame Sollerets R25                               
+    neck  Ninja Nodowa +2 R25                               
+   waist  Sailfi Belt +1 R15                                
+    ear1  Moonshade Earring                                 
+    ear2  Lugra Earring +1 R15 (day)                        
+   ring1  Gere Ring                                         
+   ring2  Epaminondas's Ring                                
+    back  Andartia's Mantle STR WSD                         
+
+WS TP Range: [2000,2300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Tachi: Kasha            0      20455      19536      27233

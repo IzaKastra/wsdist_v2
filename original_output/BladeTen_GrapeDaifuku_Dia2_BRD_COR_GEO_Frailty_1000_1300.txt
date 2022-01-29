@@ -1,0 +1,23 @@
+Blade: Ten best available gear set.
+
+    main  Heishi Shorinken R15                              
+     sub  Kunimitsu R25                                     
+  ranged  Empty                                             
+    ammo  Crepuscular Pebble                                
+    head  Mpaca's Cap R25                                   
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Mpaca's Hose R25                                  
+    feet  Nyame Sollerets R25                               
+    neck  Ninja Nodowa +2 R25                               
+   waist  Sailfi Belt +1 R15                                
+    ear1  Moonshade Earring                                 
+    ear2  Lugra Earring +1 R15 (day)                        
+   ring1  Epaminondas's Ring                                
+   ring2  Regal Ring                                        
+    back  Andartia's Mantle STR WSD                         
+
+WS TP Range: [1000,1300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Ten              0      32083      32213      39363

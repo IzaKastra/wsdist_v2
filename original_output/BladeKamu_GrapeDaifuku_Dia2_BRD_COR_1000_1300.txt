@@ -1,0 +1,23 @@
+Blade: Kamu best available gear set.
+
+    main  Nagi R15                                          
+     sub  Crepuscular Knife                                 
+  ranged  Empty                                             
+    ammo  Crepuscular Pebble                                
+    head  Hachiya Hatsuburi +3                              
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Mpaca's Hose R25                                  
+    feet  Nyame Sollerets R25                               
+    neck  Ninja Nodowa +2 R25                               
+   waist  Sailfi Belt +1 R15                                
+    ear1  Lugra Earring +1 R15 (day)                        
+    ear2  Brutal Earring                                    
+   ring1  Gere Ring                                         
+   ring2  Epona's Ring                                      
+    back  Andartia's Mantle STR Double Attack               
+
+WS TP Range: [1000,1300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Kamu             0      14598      15060      28925

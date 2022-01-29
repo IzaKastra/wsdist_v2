@@ -1,0 +1,23 @@
+Savage Blade best available gear set.
+
+    main  Naegling                                          
+     sub  Hitaki                                            
+  ranged  Empty                                             
+    ammo  Crepuscular Pebble                                
+    head  Hachiya Hatsuburi +3                              
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Nyame Flanchard R25                               
+    feet  Nyame Sollerets R25                               
+    neck  Ninja Nodowa +2 R25                               
+   waist  Sailfi Belt +1 R15                                
+    ear1  Lugra Earring +1 R15 (day)                        
+    ear2  Ishvara Earring                                   
+   ring1  Gere Ring                                         
+   ring2  Epaminondas's Ring                                
+    back  Andartia's Mantle STR WSD                         
+
+WS TP Range: [2000,2300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Savage Blade         1678      59346      59621      67395

@@ -1,0 +1,23 @@
+Blade: Ku best available gear set.
+
+    main  Gokotai                                           
+     sub  Gleti's Knife R25                                 
+  ranged  Empty                                             
+    ammo  Crepuscular Pebble                                
+    head  Blistering Sallet +1 R15                          
+    body  Malignance Tabard                                 
+   hands  Malignance Gloves                                 
+    legs  Mpaca's Hose R25                                  
+    feet  Nyame Sollerets R25                               
+    neck  Ninja Nodowa +2 R25                               
+   waist  Fotia Belt                                        
+    ear1  Lugra Earring +1 R15 (day)                        
+    ear2  Mache Earring +1A                                 
+   ring1  Gere Ring                                         
+   ring2  Regal Ring                                        
+    back  Andartia's Mantle STR Double Attack               
+
+WS TP Range: [1000,1300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Ku           11966      26553      26808      31244

@@ -1,0 +1,23 @@
+Blade: Ten best available gear set.
+
+    main  Heishi Shorinken R15                              
+     sub  Kunimitsu R25                                     
+  ranged  Empty                                             
+    ammo  Seeth. Bomblet +1 R15                             
+    head  Nyame Helm R25                                    
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Nyame Flanchard R25                               
+    feet  Nyame Sollerets R25                               
+    neck  Caro Necklace                                     
+   waist  Sailfi Belt +1 R15                                
+    ear1  Moonshade Earring                                 
+    ear2  Lugra Earring +1 R15 (day)                        
+   ring1  Regal Ring                                        
+   ring2  Gere Ring                                         
+    back  Andartia's Mantle STR WSD                         
+
+WS TP Range: [2000,2300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Ten              0      35478      35878      42650

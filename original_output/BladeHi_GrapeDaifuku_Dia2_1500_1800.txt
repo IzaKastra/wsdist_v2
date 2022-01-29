@@ -1,0 +1,23 @@
+Blade: Hi best available gear set.
+
+    main  Kannagi R15                                       
+     sub  Gleti's Knife R25                                 
+  ranged  Empty                                             
+    ammo  Yetshila +1                                       
+    head  Kendatsuba Jinpachi +1                            
+    body  Kendatsuba Samue +1                               
+   hands  Ryuo Tekko +1 A                                   
+    legs  Nyame Flanchard R25                               
+    feet  Nyame Sollerets R25                               
+    neck  Ninja Nodowa +2 R25                               
+   waist  Sailfi Belt +1 R15                                
+    ear1  Odr Earring                                       
+    ear2  Lugra Earring +1 R15 (day)                        
+   ring1  Ilabrat Ring                                      
+   ring2  Regal Ring                                        
+    back  Andartia's Mantle DEX Crit Rate                   
+
+WS TP Range: [1500,1800]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Hi               0      15358      15957      25256

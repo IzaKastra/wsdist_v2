@@ -1,0 +1,23 @@
+Blade: Ku best available gear set.
+
+    main  Gokotai                                           
+     sub  Kunimitsu R25                                     
+  ranged  Empty                                             
+    ammo  Seeth. Bomblet +1 R15                             
+    head  Mpaca's Cap R25                                   
+    body  Mpaca's Doublet R25                               
+   hands  Mochizuki Tekko +3                                
+    legs  Rao Haidate +1 B                                  
+    feet  Nyame Sollerets R25                               
+    neck  Fotia Gorget                                      
+   waist  Fotia Belt                                        
+    ear1  Lugra Earring +1 R15 (day)                        
+    ear2  Mache Earring +1B                                 
+   ring1  Regal Ring                                        
+   ring2  Gere Ring                                         
+    back  Andartia's Mantle STR Double Attack               
+
+WS TP Range: [1000,1300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Ku            4387      10304      10229      14716
