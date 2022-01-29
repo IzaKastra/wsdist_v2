@@ -1,0 +1,23 @@
+Tachi: Koki best available gear set.
+
+    main  Hachimonji                                        
+     sub  Alber Strap                                       
+  ranged  Empty                                             
+    ammo  Seeth. Bomblet +1 R15                             
+    head  Nyame Helm R25                                    
+    body  Nyame Mail R25                                    
+   hands  Nyame Gauntlets R25                               
+    legs  Nyame Flanchard R25                               
+    feet  Nyame Sollerets R25                               
+    neck  Fotia Gorget                                      
+   waist  Fotia Belt                                        
+    ear1  Friomisi Earring                                  
+    ear2  Moonshade Earring                                 
+   ring1  Weatherspoon Ring                                 
+   ring2  Epaminondas's Ring                                
+    back  Andartia's Mantle STR WSD                         
+
+WS TP Range: [1000,1300]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Tachi: Koki             0      38190      34938      55738
