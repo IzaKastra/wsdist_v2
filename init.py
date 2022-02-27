@@ -66,7 +66,7 @@ if not os.path.exists(savepath):
 nsong = 7 # Song+
 nroll = 7 # Rolls+
 nbubble = 6 # Geomancy+
-cor_sam = cor['Samurai']['STP'][0] + nroll*cor['Samurai']['STP'][1]
+cor_sam = cor['Samurai']['Store TP'][0] + nroll*cor['Samurai']['Store TP'][1]
 cor_chaos = cor['Chaos']['Attack'][0] + nroll*cor['Chaos']['Attack'][1]
 brd_min5 = brd['Minuet V']['Attack'][0] + nsong*brd['Minuet V']['Attack'][1]
 brd_min4 = brd['Minuet IV']['Attack'][0] + nsong*brd['Minuet IV']['Attack'][1]
@@ -99,7 +99,7 @@ attack_cap = False # Artifically place attack at 99999? Might not work as intend
 
 buffs = {"food": food,
          "brd": {"Attack": brd_attack, "Accuracy": brd_accuracy},
-         "cor": {"Attack": cor_attack, 'STP': cor_stp},
+         "cor": {"Attack": cor_attack, 'Store TP': cor_stp},
          "geo": {"Attack": geo_attack},
          "whm": False, # WHM buffs like boost-STR. Not tested
          }
