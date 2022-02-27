@@ -15,7 +15,7 @@ import numpy as np
 # For Example: GEO Acumen uses [15,3]. So with +6 geomancy, it would be Base+Bonus*6 = 15+3*6 Magic Attack with Acumen
 
 cor = {'Chaos': {'Attack':[0.25, 32./1024]},
-       'Samurai': {'STP':[32,4]},
+       'Samurai': {'Store TP':[32,4]},
        'Rogue': {'Crit Rate':[10,1]},
        'Fighter': {'DA':[10,1]},
        'Hunter': {'Accuracy':[40,5]},
