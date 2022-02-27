@@ -1,0 +1,23 @@
+Blade: Shun best available gear set.
+
+    main  Heishi Shorinken R15                              
+     sub  Kunimitsu R25                                     
+  ranged  Empty                                             
+    ammo  Aurgelmir Orb +1                                  
+    head  Mpaca's Cap R25                                   
+    body  Malignance Tabard                                 
+   hands  Malignance Gloves                                 
+    legs  Mpaca's Hose R25                                  
+    feet  Kendatsuba Sune-ate +1                            
+    neck  Fotia Gorget                                      
+   waist  Fotia Belt                                        
+    ear1  Moonshade Earring                                 
+    ear2  Lugra Earring +1 R15 (day)                        
+   ring1  Regal Ring                                        
+   ring2  Gere Ring                                         
+    back  Andartia's Mantle DEX Double Attack               
+
+WS TP Range: [2000,2000]
+WeaponSkill       Minimum    Average     Median    Maximum
+_______________   _______    _______    _______    _______
+Blade: Shun          7748      17444      17678      21367

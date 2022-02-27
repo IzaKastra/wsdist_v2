@@ -1,3 +1,9 @@
+#
+# Created by Kastra on Asura.
+# Feel free to /tell in game or send a PM on FFXIAH you have questions, comments, or suggestions.
+#
+# Version date: 2022 February 26
+#
 from get_dex_crit import *
 from scipy.interpolate import interp1d
 

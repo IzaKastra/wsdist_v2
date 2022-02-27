@@ -1,0 +1,18 @@
+Blade: Shun best available gear set.
+
+    main  Heishi Shorinken R15                              
+     sub  Kunimitsu R25                                     
+  ranged  Empty                                             
+    ammo  Seki Shuriken                                     
+    head  Adhemar Bonnet +1 A                               
+    body  Kendatsuba Samue +1                               
+   hands  Adhemar Wristbands +1 B                           
+    legs  Kendatsuba Hakama +1                              
+    feet  Herculean Boots                                   
+    neck  Ninja Nodowa +2 R25                               
+   waist  Windbuffet Belt +1                                
+    ear1  Dedition Earring                                  
+    ear2  Telos Earring                                     
+   ring1  Gere Ring                                         
+   ring2  Hetairoi Ring                                     
+    back  Andartia's Mantle DEX Store TP                    

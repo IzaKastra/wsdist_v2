@@ -2,7 +2,7 @@
 # Created by Kastra on Asura.
 # Feel free to /tell in game or send a PM on FFXIAH you have questions, comments, or suggestions.
 #
-# Version date: 2022 January 22
+# Version date: 2022 February 26
 #
 # This code holds the methods for building a player's stats.
 #
@@ -43,7 +43,7 @@ class set_gear:
                  'Ranged Accuracy':0, 'Ranged Attack':0,
                  'Magic Accuracy':0, 'Magic Attack':0, 'Magic Damage':0, 'Magic Accuracy Skill':0, 'Ninjutsu Magic Attack':0, 'Magic Crit Rate':0, 'Magic Burst Damage':0,
                  'Daken':0, 'QA':0, 'TA':0, 'DA':0, 'OA8':0, 'OA7':0, 'OA6':0, 'OA5':0, 'OA4':0, 'OA3':0, 'OA2':0,
-                 'Crit Rate':0, 'Crit Damage':0,'TA DMG':0,
+                 'Crit Rate':0, 'Crit Damage':0,'DA DMG':0, 'TA DMG':0,
                  'Store TP':0,
                  'PDL':0,
                  'Dual Wield':0, 'Magic Haste':0, 'Gear Haste':0, 'JA Haste':0,
@@ -68,13 +68,13 @@ class set_gear:
                      'Accuracy1':56, 'Accuracy2':56, 'Attack1':70, 'Attack2':70,
                      'Ranged Accuracy':56, 'Ranged Attack':70,
                      'Magic Accuracy':50, 'Magic Attack':28, 'Magic Damage':0, 'Magic Accuracy Skill':0, 'Ninjutsu Magic Attack':0, 'Magic Crit Rate':0, 'Magic Burst Damage':0,
-                     'Daken':0.54, 'QA':0, 'TA':0, 'DA':0, 'OA8':0, 'OA7':0, 'OA6':0, 'OA5':0, 'OA4':0, 'OA3':0, 'OA2':0,
-                     'Crit Rate':0+5+5, 'Crit Damage':0, 'TA DMG':0,
+                     'Daken':54, 'QA':0, 'TA':0, 'DA':0, 'OA8':0, 'OA7':0, 'OA6':0, 'OA5':0, 'OA4':0, 'OA3':0, 'OA2':0,
+                     'Crit Rate':0+5+5, 'Crit Damage':0, 'DA DMG':0, 'TA DMG':0,
                      'Store TP':0,
-                     'PDL':0, 'PDL Trait':0.10,
+                     'PDL':0, 'PDL Trait':10,
                      'Dual Wield':0, 'Magic Haste':0, 'Gear Haste':0, 'JA Haste':0,
                      'Zanshin':0,
-                     'Weaponskill Damage':0.05, 'Weaponskill Bonus':0, 'Skillchain Bonus':0.12, 'ftp':0, 'TP Bonus':0, 'Weaponskill Accuracy':0,
+                     'Weaponskill Damage':5, 'Weaponskill Bonus':0, 'Skillchain Bonus':12, 'ftp':0, 'TP Bonus':0, 'Weaponskill Accuracy':0,
                      'Delay1':0, 'Delay2':0, 'Delay':0, 'Ammo Delay':0,
                      'DMG1':0, 'DMG2':0, 'Ammo DMG':0,
                      'Light Elemental Bonus':0, 'Dark Elemental Bonus':0, 'Fire Elemental Bonus':0,'Earth Elemental Bonus':0, 'Water Elemental Bonus':0, 'Wind Elemental Bonus':0,'Ice Elemental Bonus':0, 'Thunder Elemental Bonus':0,'Elemental Bonus':0, 'Weaponskill Accuracy':0,

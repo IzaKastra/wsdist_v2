@@ -2,7 +2,7 @@
 # Created by Kastra on Asura.
 # Feel free to /tell in game or send a PM on FFXIAH you have questions, comments, or suggestions.
 #
-# Version date: 2021 August 22
+# Version date: 2021 February 26
 #
 # This file contains a list of buffs that may be provided to a gear set when simulating damage.
 #
@@ -17,7 +17,7 @@ import numpy as np
 cor = {'Chaos': {'Attack':[0.25, 32./1024]},
        'Samurai': {'STP':[32,4]},
        'Rogue': {'Crit Rate':[10,1]},
-       'Fighter': {'DA':[0.1,0.01]},
+       'Fighter': {'DA':[10,1]},
        'Hunter': {'Accuracy':[40,5]},
        'Wizard': {'Magic Attack':[25,2]}}
 

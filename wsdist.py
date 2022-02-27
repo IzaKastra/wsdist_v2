@@ -2,7 +2,7 @@
 # Created by Kastra on Asura.
 # Feel free to /tell in game or send a PM on FFXIAH you have questions, comments, or suggestions.
 #
-# Version date: 2022 January 28
+# Version date: 2022 February 26
 #
 # This is the main code that gets run. It reads in the init file for user-defined parameters and runs the simulations to find the best gear set by calling the functions within this code and within other codes.
 #
@@ -34,7 +34,7 @@ class TP_Error(Exception):
     pass
 
 
-def weaponskill(ws_name, gearset, tp, enemy_lvl, enemy_defense, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final=False):
+def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final=False):
     #
     # Use the player and enemy stats to calculate weapon skill damage.
     # This function works, but needs to be cleaned up. There is too much going on within it.
@@ -65,8 +65,8 @@ def weaponskill(ws_name, gearset, tp, enemy_lvl, enemy_defense, enemy_eva, enemy
     sub_dmg  = gearset.playerstats['DMG2']
 
     fotia_ftp = gearset.playerstats['ftp']
-    pdl_gear  = gearset.playerstats['PDL']
-    pdl_trait = gearset.playerstats['PDL Trait']
+    pdl_gear  = gearset.playerstats['PDL']/100.
+    pdl_trait = gearset.playerstats['PDL Trait']/100.
 
     player_str = gearset.playerstats['STR']
     player_dex = gearset.playerstats['DEX']
@@ -88,11 +88,11 @@ def weaponskill(ws_name, gearset, tp, enemy_lvl, enemy_defense, enemy_eva, enemy
     dw = gearset.playerstats['Dual Wield'] if dual_wield else 0
     mdelay = (delay1+delay2)/2.*(1.-dw) if dual_wield else delay1 # Modified delay based on weapon delays and dual wield
 
-    wsd = gearset.playerstats['Weaponskill Damage'] # Applies to first hit only
+    wsd = gearset.playerstats['Weaponskill Damage']/100. # Applies to first hit only
     ws_acc = gearset.gearstats['Weaponskill Accuracy']
-    ws_bonus = gearset.playerstats['Weaponskill Bonus'] # Bonus damage multiplier to every hit on the WS. Stuff like Gokotai, Naegling, hidden Relic/Mythic WS damage, REMA augments, and /drg
+    ws_bonus = gearset.playerstats['Weaponskill Bonus']/100. # Bonus damage multiplier to every hit on the WS. Stuff like Gokotai, Naegling, hidden Relic/Mythic WS damage, REMA augments, and /drg
 
-    crit_dmg = gearset.playerstats['Crit Damage']
+    crit_dmg = gearset.playerstats['Crit Damage']/100.
     crit_rate = 0 # WSs can't crit unless they explicitly say they can (Blade: Hi, Evisceration, etc). Crit rate is read in properly only for those weapon skills (see below) and the special case with Shining One
 
     qa = gearset.playerstats['QA']/100
@@ -107,10 +107,11 @@ def weaponskill(ws_name, gearset, tp, enemy_lvl, enemy_defense, enemy_eva, enemy
     player_magic_damage = gearset.playerstats['Magic Damage']
 
     dStat = ['STR', 0] # Part of the fix for Crepsecular Knife's CHR bonus. Needed to first assign a base dStat bonus. In this case I just used STR with 0 bonus to apply to all WSs, and Crepsecular just changes this to ['CHR', 0.03]. Utu Grip changes this to ['DEX', 0.10]
-    if sub_wpn_name == "Crepsecular Knife":
-        dStat = ['CHR', 0.03]
+    if sub_wpn_name == "Crepuscular Knife":
+        dStat = ['CHR', 3]
     elif sub_wpn_name == "Utu Grip":
-        dStat = ['DEX', 0.10]
+        dStat = ['DEX', 3]
+    dStat[1] /= 100.
 
     # Check weapon + weapon skill synergy for things like bonus weapon skill damage.
     # See "check_weaponskill_bonuses.py"
@@ -144,6 +145,7 @@ def weaponskill(ws_name, gearset, tp, enemy_lvl, enemy_defense, enemy_eva, enemy
     # Define elemental damage bonuses now that we know what element your hybrid/magical weapon skill is.
     if hybrid or magical:
         elemental_damage_bonus = gearset.playerstats['Elemental Bonus'] + gearset.playerstats.get(element + ' Elemental Bonus', 0)
+        elemental_damage_bonus /= 100.
 
     # fSTR calculation for main-hand and off-hand
     fstr_main = get_fstr(main_dmg, player_str, enemy_vit)
@@ -360,15 +362,12 @@ def test_set(WS_name, buffs, equipment, gearset, tp1, tp2, attack_cap=False, fin
             tp = np.random.uniform(tp1,tp2)
 
             # Define your target to simulate against. Toads have 3 possible options, but you could easily code something like Kin and only have one set of stats to pull from.
-            enemy_index = random.choice([0,1,2]) # Pick one of the three Apex Toads.
-            enemy_index = 1 # Force the average toad.
-            enemy_lvl = apex_toad['Level'][enemy_index]
-            enemy_def = apex_toad['Defense'][enemy_index]
-            enemy_vit = apex_toad['VIT'][enemy_index]
-            enemy_agi = apex_toad['AGI'][enemy_index]
-            enemy_mdb = apex_toad['Magic Defense'][enemy_index]
-            enemy_eva = apex_toad['Evasion'][enemy_index]
-            values = weaponskill(WS_name, gearset, tp, enemy_lvl, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final) # values = [damage, TP_return]
+            enemy_def = enemy['Defense']
+            enemy_vit = enemy['VIT']
+            enemy_agi = enemy['AGI']
+            enemy_mdb = enemy['Magic Defense']
+            enemy_eva = enemy['Evasion']
+            values = weaponskill(WS_name, gearset, tp, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final) # values = [damage, TP_return]
             damage.append(values[0]) # Append the damage from each simulation to a list. Plot this list as a histogram later.
             tp_return.append(values[1])
 
@@ -377,14 +376,12 @@ def test_set(WS_name, buffs, equipment, gearset, tp1, tp2, attack_cap=False, fin
     else:
         tp = np.average([tp1,tp2])
 
-        enemy_index = 1
-        enemy_lvl = apex_toad['Level'][enemy_index]
-        enemy_def = apex_toad['Defense'][enemy_index]
-        enemy_vit = apex_toad['VIT'][enemy_index]
-        enemy_agi = apex_toad['AGI'][enemy_index]
-        enemy_mdb = apex_toad['Magic Defense'][enemy_index]
-        enemy_eva = apex_toad['Evasion'][enemy_index]
-        damage, _ = weaponskill(WS_name, gearset, tp, enemy_lvl, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final)
+        enemy_def = enemy['Defense']
+        enemy_vit = enemy['VIT']
+        enemy_agi = enemy['AGI']
+        enemy_mdb = enemy['Magic Defense']
+        enemy_eva = enemy['Evasion']
+        damage, _ = weaponskill(WS_name, gearset, tp, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final)
         return(damage)
 
 
