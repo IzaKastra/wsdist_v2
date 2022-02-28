@@ -23,7 +23,7 @@ shortname = "BladeShun" # Shortened weapon skill name. Used as filenames for out
 
 # Define upper and lower TP limits. Must remain as a list with at least 1 entry.
 tp1_list = [1000,1500,2000] # Minimum TP values to check
-tp2_list = [1300,1800,2000] # Maximum TP values to check. Same length as "tp1_list"
+tp2_list = [1300,1800,2300] # Maximum TP values to check. Same length as "tp1_list"
 
 
 # Starting gearset for simulations.
@@ -45,8 +45,8 @@ starting_gearset = {
                 'ring2' : Hetairoi_Ring,
                 'back' : Andartia_STP}
 
-all_gear =[ammos, heads, necks, ears, ears2, bodies, hands, rings, rings2, capes, belts, legs, feet] # List containing lists of gear to check in each slot. Modify the lists in gear.py to change which items are included in "heads" for example.
-names = ["ammo", "head", "neck", "ear1", "ear2", "body", "hands", "ring1", "ring2", "back", "waist", "legs", "feet"] # Names for each slot. Should match length of "all_gear" and uses same format at in-game /equip
+all_gear =[mains, subs, ammos, heads, necks, ears, ears2, bodies, hands, rings, rings2, capes, belts, legs, feet] # List containing lists of gear to check in each slot. Modify the lists in gear.py to change which items are included in "heads" for example.
+names = ["main", "sub", "ammo", "head", "neck", "ear1", "ear2", "body", "hands", "ring1", "ring2", "back", "waist", "legs", "feet"] # Names for each slot. Should match length of "all_gear" and uses same format at in-game /equip
 
 fitn = 2 # Number of slots to swap simultaneously (up to 3). More = WAY slower.
          # fitn=3 is like 15mins per iteration, so ~45-60 minutes per weapon skill set.

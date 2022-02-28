@@ -4,11 +4,11 @@ Blade: Kamu best available gear set.
      sub  Gleti's Knife R25                                 
   ranged  Empty                                             
     ammo  Seeth. Bomblet +1 R15                             
-    head  Nyame Helm R25                                    
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
+    head  Nyame Helm R25 B                                  
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
     legs  Mpaca's Hose R25                                  
-    feet  Nyame Sollerets R25                               
+    feet  Nyame Sollerets R25 B                             
     neck  Fotia Gorget                                      
    waist  Sailfi Belt +1 R15                                
     ear1  Lugra Earring +1 R15 (day)                        
@@ -20,4 +20,4 @@ Blade: Kamu best available gear set.
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Kamu             0      12472      12843      25104
+Blade: Kamu             0      12459      12802      25312
