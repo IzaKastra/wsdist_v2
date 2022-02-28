@@ -5,10 +5,10 @@ Blade: Ten best available gear set.
   ranged  Empty                                             
     ammo  Crepuscular Pebble                                
     head  Mpaca's Cap R25                                   
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
     legs  Mpaca's Hose R25                                  
-    feet  Nyame Sollerets R25                               
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Sailfi Belt +1 R15                                
     ear1  Moonshade Earring                                 
@@ -20,4 +20,4 @@ Blade: Ten best available gear set.
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Ten              0      32083      32213      39363
+Blade: Ten              0      32088      32214      39373

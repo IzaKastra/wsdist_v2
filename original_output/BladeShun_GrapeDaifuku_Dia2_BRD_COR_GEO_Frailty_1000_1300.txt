@@ -1,7 +1,7 @@
 Blade: Shun best available gear set.
 
     main  Heishi Shorinken R15                              
-     sub  Gleti's Knife R25                                 
+     sub  Crepuscular Knife                                 
   ranged  Empty                                             
     ammo  Crepuscular Pebble                                
     head  Kendatsuba Jinpachi +1                            
@@ -12,12 +12,12 @@ Blade: Shun best available gear set.
     neck  Ninja Nodowa +2 R25                               
    waist  Fotia Belt                                        
     ear1  Lugra Earring +1 R15 (day)                        
-    ear2  Odr Earring                                       
-   ring1  Gere Ring                                         
-   ring2  Regal Ring                                        
-    back  Andartia's Mantle DEX Double Attack               
+    ear2  Mache Earring +1B                                 
+   ring1  Regal Ring                                        
+   ring2  Gere Ring                                         
+    back  Andartia's Mantle DEX DA                          
 
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Shun          8497      19651      19702      22966
+Blade: Shun          8626      19727      19814      23161

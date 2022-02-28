@@ -13,11 +13,11 @@ Evisceration best available gear set.
    waist  Fotia Belt                                        
     ear1  Odr Earring                                       
     ear2  Lugra Earring +1 R15 (day)                        
-   ring1  Gere Ring                                         
-   ring2  Begrudging Ring                                   
+   ring1  Begrudging Ring                                   
+   ring2  Gere Ring                                         
     back  Andartia's Mantle DEX Crit Rate                   
 
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Evisceration         7016      17995      17358      23727
+Evisceration         7439      17992      17329      23873

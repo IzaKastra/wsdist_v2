@@ -19164,6 +19164,7 @@
 23799    crepuscular cloak
 23800    cancrine apron
 23801    cancrine apron +1
+25415    republican platinum medal
 25417    warrior's bead necklace
 25418    warrior's bead necklace +1
 25419    warrior's bead necklace +2

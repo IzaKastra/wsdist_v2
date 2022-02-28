@@ -5,19 +5,19 @@ Blade: Ten best available gear set.
   ranged  Empty                                             
     ammo  Crepuscular Pebble                                
     head  Hachiya Hatsuburi +3                              
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
     legs  Mpaca's Hose R25                                  
-    feet  Nyame Sollerets R25                               
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Sailfi Belt +1 R15                                
     ear1  Moonshade Earring                                 
     ear2  Lugra Earring +1 R15 (day)                        
-   ring1  Regal Ring                                        
-   ring2  Epaminondas's Ring                                
+   ring1  Epaminondas's Ring                                
+   ring2  Regal Ring                                        
     back  Andartia's Mantle STR WSD                         
 
 WS TP Range: [2000,2300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Ten              0      42219      42494      49768
+Blade: Ten              0      42224      42497      49746

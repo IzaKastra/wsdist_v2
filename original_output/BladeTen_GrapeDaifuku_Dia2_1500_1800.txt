@@ -5,11 +5,11 @@ Blade: Ten best available gear set.
   ranged  Empty                                             
     ammo  Seeth. Bomblet +1 R15                             
     head  Mpaca's Cap R25                                   
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
-    legs  Nyame Flanchard R25                               
-    feet  Nyame Sollerets R25                               
-    neck  Caro Necklace                                     
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
+    legs  Nyame Flanchard R25 B                             
+    feet  Nyame Sollerets R25 B                             
+    neck  Republican Platinum Medal                         
    waist  Sailfi Belt +1 R15                                
     ear1  Moonshade Earring                                 
     ear2  Lugra Earring +1 R15 (day)                        
@@ -20,4 +20,4 @@ Blade: Ten best available gear set.
 WS TP Range: [1500,1800]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Ten              0      15221      15307      22214
+Blade: Ten              0      15444      15544      22263

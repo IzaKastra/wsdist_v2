@@ -5,10 +5,10 @@ Savage Blade best available gear set.
   ranged  Empty                                             
     ammo  Crepuscular Pebble                                
     head  Hachiya Hatsuburi +3                              
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
-    legs  Nyame Flanchard R25                               
-    feet  Nyame Sollerets R25                               
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
+    legs  Nyame Flanchard R25 B                             
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Sailfi Belt +1 R15                                
     ear1  Lugra Earring +1 R15 (day)                        
@@ -20,4 +20,4 @@ Savage Blade best available gear set.
 WS TP Range: [2000,2300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Savage Blade         1678      59346      59621      67395
+Savage Blade            0      59310      59596      67380

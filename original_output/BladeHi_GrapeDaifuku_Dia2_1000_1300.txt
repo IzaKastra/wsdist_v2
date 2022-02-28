@@ -5,19 +5,19 @@ Blade: Hi best available gear set.
   ranged  Empty                                             
     ammo  Yetshila +1                                       
     head  Blistering Sallet +1 R15                          
-    body  Kendatsuba Samue +1                               
-   hands  Nyame Gauntlets R25                               
-    legs  Nyame Flanchard R25                               
-    feet  Nyame Sollerets R25                               
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
+    legs  Nyame Flanchard R25 B                             
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Sailfi Belt +1 R15                                
     ear1  Odr Earring                                       
     ear2  Lugra Earring +1 R15 (day)                        
-   ring1  Regal Ring                                        
-   ring2  Begrudging Ring                                   
+   ring1  Begrudging Ring                                   
+   ring2  Regal Ring                                        
     back  Andartia's Mantle AGI Crit Rate                   
 
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Hi               0      14570      15852      25877
+Blade: Hi               0      14555      16473      26511

@@ -5,19 +5,19 @@ Evisceration best available gear set.
   ranged  Empty                                             
     ammo  Yetshila +1                                       
     head  Blistering Sallet +1 R15                          
-    body  Abnoba Kaftan                                     
-   hands  Kendatsuba Tekko +1                               
+    body  Mpaca's Doublet R25                               
+   hands  Ryuo Tekko +1 A                                   
     legs  Mpaca's Hose R25                                  
     feet  Kendatsuba Sune-ate +1                            
-    neck  Fotia Gorget                                      
+    neck  Ninja Nodowa +2 R25                               
    waist  Fotia Belt                                        
     ear1  Odr Earring                                       
     ear2  Lugra Earring +1 R15 (day)                        
-   ring1  Regal Ring                                        
-   ring2  Ilabrat Ring                                      
+   ring1  Ilabrat Ring                                      
+   ring2  Regal Ring                                        
     back  Andartia's Mantle DEX Crit Rate                   
 
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Evisceration        11459      25024      23618      31852
+Evisceration        10240      25257      23963      32214

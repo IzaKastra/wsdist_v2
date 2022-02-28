@@ -4,20 +4,20 @@ Savage Blade best available gear set.
      sub  Hitaki                                            
   ranged  Empty                                             
     ammo  Seeth. Bomblet +1 R15                             
-    head  Mpaca's Cap R25                                   
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
-    legs  Nyame Flanchard R25                               
-    feet  Nyame Sollerets R25                               
-    neck  Ninja Nodowa +2 R25                               
+    head  Hachiya Hatsuburi +3                              
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
+    legs  Nyame Flanchard R25 B                             
+    feet  Nyame Sollerets R25 B                             
+    neck  Republican Platinum Medal                         
    waist  Sailfi Belt +1 R15                                
     ear1  Moonshade Earring                                 
     ear2  Lugra Earring +1 R15 (day)                        
-   ring1  Regal Ring                                        
-   ring2  Gere Ring                                         
+   ring1  Gere Ring                                         
+   ring2  Epaminondas's Ring                                
     back  Andartia's Mantle STR WSD                         
 
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Savage Blade         1928      45193      45613      56039
+Savage Blade            0      44675      45068      53879

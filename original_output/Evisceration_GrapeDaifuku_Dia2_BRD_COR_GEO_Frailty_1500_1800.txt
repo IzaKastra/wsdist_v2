@@ -11,13 +11,13 @@ Evisceration best available gear set.
     feet  Kendatsuba Sune-ate +1                            
     neck  Ninja Nodowa +2 R25                               
    waist  Fotia Belt                                        
-    ear1  Odr Earring                                       
-    ear2  Lugra Earring +1 R15 (day)                        
-   ring1  Regal Ring                                        
-   ring2  Gere Ring                                         
+    ear1  Lugra Earring +1 R15 (day)                        
+    ear2  Odr Earring                                       
+   ring1  Gere Ring                                         
+   ring2  Regal Ring                                        
     back  Andartia's Mantle DEX Crit Rate                   
 
 WS TP Range: [1500,1800]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Evisceration        14083      27403      27491      33815
+Evisceration        12232      27400      27496      33743

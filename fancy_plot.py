@@ -108,8 +108,8 @@ def plot_final(damage, gearset, attack_cap, shortname, output_file_suffix, tp1, 
             print(f"\nUnable to find image file: {icons_path}{id}.png ({item_names[a][0]})")
             print(f"Download the 32x32.png image icon for this item as {icons_path}{id}.png and try again.\n")
 
-    ax.hist(damage,bins=100,histtype='stepfilled',density=True,color='grey',alpha=0.25) # Filled-in distribution, grey
-    ax.hist(damage,bins=100,histtype='step',density=True,color='black',alpha=1.0) # Solid black outline for the filled grey distribution.
+    ax.hist(damage,bins=200,histtype='stepfilled',density=True,color='grey',alpha=0.25) # Filled-in distribution, grey
+    ax.hist(damage,bins=200,histtype='step',density=True,color='black',alpha=1.0) # Solid black outline for the filled grey distribution.
     ax.axvline(x=np.average(damage),ymin=0,ymax=1,color='black',linestyle='--',label=f'Average = {int(np.average(damage))} damage.') # Vertical line at the average damage value.
     ax.set_xlabel('Damage')
 

@@ -20,4 +20,4 @@ Evisceration best available gear set.
 WS TP Range: [1500,1800]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Evisceration        10342      26113      26504      32336
+Evisceration        11162      26106      26477      32217

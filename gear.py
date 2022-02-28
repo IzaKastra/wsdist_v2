@@ -51,8 +51,8 @@ Tsuru30 = {'Name': 'Tsuru', 'Name2': 'Tsuru R30', 'Skill Type': 'Katana', 'Type'
 #Karambit = {'Name': 'Karambit' 'Skill Type':'Hand-to-Hand', 'Type':'Weapon', 'DMG':'Base+180','Delay':'base+96', 'STR':20, 'DEX':20,'VIT':20,'Accuracy':40,'Attack':30,'Magic Accuracy':40,'Hand-to-Hand Skill':250, 'Magic Accuracy Skill':250}
 
 Alber_Strap = {'Name': 'Alber Strap', 'Type': 'Grip', 'Magic Attack':7, "DA":2}
-Utu_Grip = {'Name': 'Utu Grip', 'Type': 'Grip', 'Accuracy':30, 'Attack':30}
 Rigorous_Grip = {'Name': 'Rigorous Grip +1', 'Name2': 'Rigorous Grip +1 R15', 'STR':4+15, 'Attack':13+30, 'Accuracy':3}
+Utu_Grip = {'Name': 'Utu Grip', 'Type': 'Grip', 'Accuracy':30, 'Attack':30}
 
 mains = [Heishi, Kannagi, Kikoku, Nagi, Gokotai]
 subs = [Ternion, Kunimitsu, Gleti_Knife, Tauret, Gokotai, Crepuscular_Knife]
@@ -101,9 +101,10 @@ Baetyl_Pendant = {'Name': 'Baetyl Pendant', 'Magic Attack':13, 'Jobs':all_jobs}
 Caro_Necklace = {'Name': 'Caro Necklace', 'STR':6,'DEX':6,'Attack':10, 'Jobs':all_jobs}
 Fotia_Gorget = {'Name': 'Fotia Gorget', 'Weaponskill Accuracy': 10, 'ftp': 25./256., 'Jobs':all_jobs}
 Ninja_Nodowa = {'Name': 'Ninja Nodowa +2', 'Name2': 'Ninja Nodowa +2 R25', 'Accuracy': 25, 'Ranged Accuracy': 25, 'Store TP': 7, 'DEX':15, 'AGI':15, 'Daken':25, 'PDL':10, 'Jobs':['nin']}
+Rep_Plat_Medal = {'Name' 'Republican Platinum Medal', 'STR':10, 'Attack':30, 'Ranged Attack':30}
 Samurai_Nodowa = {'Name': 'Samurai Nodowa +2', 'Name2':'Samurai Nodowa +2 R25', 'Accuracy':30, 'Store TP':7+7, 'STR':0+25, 'PDL':0+10, 'Jobs':['sam']}
 Sanctity_Necklace = {'Name': 'Sanctity Necklace', 'Attack':10,'Ranged Attack':10,'Ranged Accuracy':10,'Magic Accuracy':10,'Magic Attack':10, 'Jobs':all_jobs}
-necks = [Ninja_Nodowa, Fotia_Gorget, Caro_Necklace, Baetyl_Pendant]
+necks = [Ninja_Nodowa, Fotia_Gorget, Caro_Necklace, Baetyl_Pendant, Rep_Plat_Medal]
 
 Balder_Earring = {'Name': 'Balder Earring +1', 'Attack':10, 'Store TP':3, 'QA':1, 'Jobs':all_jobs}
 Brutal_Earring = {'Name': 'Brutal Earring', "DA":5,'Store TP':1, 'Jobs':all_jobs}
@@ -231,7 +232,6 @@ Smirtrios_DAstr = {'Name': 'Smirtrios\'s Mantle', 'Name2': 'Smirtrios\'s Mantle 
 Smirtrios_WSDstr = {'Name': 'Smirtrios\'s Mantle', 'Name2': 'Smirtrios\'s Mantle STR WSD', 'STR':30, 'Attack':20, 'Accuracy':20, 'Weaponskill Damage':10, "Skillchain Bonus":3,'Jobs':['sam']}
 capes = [Andartia_DAdex, Andartia_DAstr, Andartia_DAagi, Andartia_Critagi, Andartia_Critdex, Andartia_WSDstr, Andartia_WSDdex, Andartia_WSDagi, Andartia_Nuke]
 
-
 Eschan_Stone = {'Name': 'Eschan Stone', 'Accuracy':15, 'Ranged Accuracy':15, 'Attack':15, 'Ranged Attack':15, 'Magic Accuracy':7, 'Magic Attack':7,'Jobs':[]}
 Fotia_Belt = {'Name': 'Fotia Belt', 'Weaponskill Accuracy': 10, 'ftp': 25./256.,'Jobs':[]}
 Grunfeld_Rope = {'Name': 'Grunfeld Rope', 'STR':5, 'DEX':5, 'Accuracy':10, 'Attack':20, "DA":2,'Jobs':[]}
@@ -242,7 +242,6 @@ Orpheus_Sash = {'Name': "Orpheus's Sash", 'Elemental Bonus': 15,'Jobs':[]}
 Reiki_Yotai = {'Name': 'Reiki Yotai', 'Accuracy':10, 'Ranged Accuracy':10, 'Store TP':4, 'Dual Wield':.07,'Jobs':[]}
 Sailfi_Belt = {'Name': 'Sailfi Belt +1', 'Name2': 'Sailfi Belt +1 R15', 'Gear Haste':9, "TA":2, 'Attack':14, 'STR':0+15, "DA":0+5,'Jobs':[]}
 Windbuffet_Belt = {'Name': 'Windbuffet Belt +1', 'Accuracy':2, "TA":2, 'QA':2,'Jobs':[]}
-
 belts = [Windbuffet_Belt, Fotia_Belt, Grunfeld_Rope, Kentarch_Belt, Sailfi_Belt, Orpheus_Sash]
 
 Adhemar_Kecks_A = {'Name': 'Adhemar Kecks +1', 'Name2': 'Adhemar Kecks +1 A', 'STR':32, 'DEX':0+12, 'VIT':15, 'AGI':30+12, 'INT':28, 'MND':16, 'CHR':8, 'Accuracy':34+20, 'Ranged Accuracy':34, 'Gear Haste':6, 'Store TP':8,'Jobs':[]}

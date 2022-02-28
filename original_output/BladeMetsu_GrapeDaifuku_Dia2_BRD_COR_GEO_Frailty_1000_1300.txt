@@ -6,9 +6,9 @@ Blade: Metsu best available gear set.
     ammo  Crepuscular Pebble                                
     head  Hachiya Hatsuburi +3                              
     body  Malignance Tabard                                 
-   hands  Nyame Gauntlets R25                               
+   hands  Nyame Gauntlets R25 B                             
     legs  Mpaca's Hose R25                                  
-    feet  Nyame Sollerets R25                               
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Kentarch Belt +1 R15                              
     ear1  Mache Earring +1A                                 
@@ -20,4 +20,4 @@ Blade: Metsu best available gear set.
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Metsu            0      31375      31857      43231
+Blade: Metsu            0      31391      31849      43145

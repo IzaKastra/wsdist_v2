@@ -13,11 +13,11 @@ Blade: Shun best available gear set.
    waist  Fotia Belt                                        
     ear1  Lugra Earring +1 R15 (day)                        
     ear2  Moonshade Earring                                 
-   ring1  Gere Ring                                         
-   ring2  Regal Ring                                        
-    back  Andartia's Mantle DEX Double Attack               
+   ring1  Regal Ring                                        
+   ring2  Gere Ring                                         
+    back  Andartia's Mantle DEX DA                          
 
 WS TP Range: [2000,2300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Shun          7368      17576      17827      21452
+Blade: Shun          7705      17578      17825      21441

@@ -1,18 +1,18 @@
 Blade: Hi best available gear set.
 
     main  Kannagi R15                                       
-     sub  Gleti's Knife R25                                 
+     sub  Crepuscular Knife                                 
   ranged  Empty                                             
     ammo  Yetshila +1                                       
     head  Hachiya Hatsuburi +3                              
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
     legs  Mpaca's Hose R25                                  
-    feet  Nyame Sollerets R25                               
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Sailfi Belt +1 R15                                
-    ear1  Ishvara Earring                                   
-    ear2  Odr Earring                                       
+    ear1  Odr Earring                                       
+    ear2  Ishvara Earring                                   
    ring1  Epaminondas's Ring                                
    ring2  Regal Ring                                        
     back  Andartia's Mantle AGI WSD                         
@@ -20,4 +20,4 @@ Blade: Hi best available gear set.
 WS TP Range: [1500,1800]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Hi               0      25336      25760      38903
+Blade: Hi               0      25452      25863      44261

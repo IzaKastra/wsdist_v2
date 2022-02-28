@@ -4,15 +4,15 @@ Blade: Metsu best available gear set.
      sub  Kunimitsu R25                                     
   ranged  Empty                                             
     ammo  Aurgelmir Orb +1                                  
-    head  Nyame Helm R25                                    
-    body  Nyame Mail R25                                    
-   hands  Nyame Gauntlets R25                               
-    legs  Nyame Flanchard R25                               
-    feet  Nyame Sollerets R25                               
+    head  Nyame Helm R25 B                                  
+    body  Nyame Mail R25 B                                  
+   hands  Nyame Gauntlets R25 B                             
+    legs  Nyame Flanchard R25 B                             
+    feet  Nyame Sollerets R25 B                             
     neck  Ninja Nodowa +2 R25                               
    waist  Sailfi Belt +1 R15                                
     ear1  Lugra Earring +1 R15 (day)                        
-    ear2  Odr Earring                                       
+    ear2  Mache Earring +1B                                 
    ring1  Regal Ring                                        
    ring2  Gere Ring                                         
     back  Andartia's Mantle DEX WSD                         
@@ -20,4 +20,4 @@ Blade: Metsu best available gear set.
 WS TP Range: [1000,1300]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Metsu            0      27809      27844      38111
+Blade: Metsu            0      27808      27939      38021

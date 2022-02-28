@@ -6,18 +6,18 @@ Blade: Shun best available gear set.
     ammo  Crepuscular Pebble                                
     head  Mpaca's Cap R25                                   
     body  Adhemar Jacket +1 B                               
-   hands  Adhemar Wristbands +1 B                           
+   hands  Malignance Gloves                                 
     legs  Mpaca's Hose R25                                  
-    feet  Kendatsuba Sune-ate +1                            
+    feet  Mpaca's Boots R25                                 
     neck  Fotia Gorget                                      
    waist  Fotia Belt                                        
     ear1  Moonshade Earring                                 
     ear2  Lugra Earring +1 R15 (day)                        
    ring1  Gere Ring                                         
    ring2  Regal Ring                                        
-    back  Andartia's Mantle DEX WSD                         
+    back  Andartia's Mantle DEX DA                          
 
 WS TP Range: [1500,1800]
 WeaponSkill       Minimum    Average     Median    Maximum
 _______________   _______    _______    _______    _______
-Blade: Shun          7220      16526      16572      20279
+Blade: Shun          7340      16569      16686      20362
