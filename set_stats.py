@@ -38,7 +38,7 @@ class set_gear:
         self.gearstats = {
                  'STR':0, 'DEX':0, 'VIT':0, 'AGI':0, 'INT':0, 'MND':0, 'CHR':0,
                  'Katana Skill':0, 'Dagger Skill':0, 'Sword Skill':0, 'Hand-to-Hand Skill':0, 'Great Katana Skill':0, 'Club Skill':0, 'Throwing Skill':0,
-                 'Ninjutsu Skill':0,
+                 'Ninjutsu Skill':0, 'Great Sword Skill':0, 'Marksmanship Skill':0,
                  'Accuracy':0, 'Attack':0,
                  'Ranged Accuracy':0, 'Ranged Attack':0,
                  'Magic Accuracy':0, 'Magic Attack':0, 'Magic Damage':0, 'Magic Accuracy Skill':0, 'Ninjutsu Magic Attack':0, 'Magic Crit Rate':0, 'Magic Burst Damage':0,
@@ -60,7 +60,7 @@ class set_gear:
         # Subjob stats and gear stats will be added later
         # Base 5% crit rate (0+5), +5 for 5/5 crit merits for 0+5+5
 
-        if mainjob == "NIN":  # Master Level 20 Ninja stats (Master Ninja stats +20 all stats and +20 Katana and Ninjutsu skills)
+        if mainjob == "NIN":  # Master Level 20 Ninja stats
             # Ninja gets +5% WSD from job gifts
             self.playerstats = {'STR':113, 'DEX':115, 'VIT':113, 'AGI':115, 'INT':110, 'MND':101, 'CHR':104,
                      'Katana Skill':460, 'Dagger Skill':414, 'Sword Skill':409, 'Hand-to-Hand Skill':0, 'Great Katana Skill':404, 'Club Skill':316, 'Throwing Skill':440,
@@ -72,7 +72,7 @@ class set_gear:
                      'Crit Rate':0+5+5, 'Crit Damage':0, 'DA DMG':0, 'TA DMG':0,
                      'Store TP':0,
                      'PDL':0, 'PDL Trait':10,
-                     'Dual Wield':0, 'Magic Haste':0, 'Gear Haste':0, 'JA Haste':0,
+                     'Dual Wield':35, 'Magic Haste':0, 'Gear Haste':0, 'JA Haste':0,
                      'Zanshin':0,
                      'Weaponskill Damage':5, 'Weaponskill Bonus':0, 'Skillchain Bonus':12, 'ftp':0, 'TP Bonus':0, 'Weaponskill Accuracy':0,
                      'Delay1':0, 'Delay2':0, 'Delay':0, 'Ammo Delay':0,
@@ -80,8 +80,26 @@ class set_gear:
                      'Light Elemental Bonus':0, 'Dark Elemental Bonus':0, 'Fire Elemental Bonus':0,'Earth Elemental Bonus':0, 'Water Elemental Bonus':0, 'Wind Elemental Bonus':0,'Ice Elemental Bonus':0, 'Thunder Elemental Bonus':0,'Elemental Bonus':0, 'Weaponskill Accuracy':0,
                      'Light Affinity':0, 'Dark Affinity':0, 'Fire Affinity':0,'Earth Affinity':0, 'Water Affinity':0, 'Wind Affinity':0,'Ice Affinity':0, 'Thunder Affinity':0,
                      }
-
-
+        if mainjob == "DRK":  # Master Level 20 Dark Knight stats
+            # Ninja gets +8% WSD from job gifts
+            self.playerstats = {'STR':117, 'DEX':113, 'VIT':113, 'AGI':110, 'INT':113, 'MND':101, 'CHR':101,
+                     'Scythe Skill':459, 'Dagger Skill':409, 'Sword Skill':424, 'Hand-to-Hand Skill':0, 'Great Katana Skill':0, 'Club Skill':404, 'Throwing Skill':0,
+                     'Ninjutsu Skill':0, 'Great Sword Skill':453, 'Marksmanship Skill':0, 'Dark Magic Skill':489, 'Axe Skill':424, 'Great Axe Skill':0
+                     'Accuracy1':22, 'Accuracy2':22, 'Attack1':202, 'Attack2':202,
+                     'Ranged Accuracy':22, 'Ranged Attack':202,
+                     'Magic Accuracy':30, 'Magic Attack':0, 'Magic Damage':0, 'Magic Accuracy Skill':0, 'Ninjutsu Magic Attack':0, 'Magic Crit Rate':0, 'Magic Burst Damage':0,
+                     'Daken':0, 'QA':0, 'TA':0, 'DA':0, 'OA8':0, 'OA7':0, 'OA6':0, 'OA5':0, 'OA4':0, 'OA3':0, 'OA2':0,
+                     'Crit Rate':0+5, 'Crit Damage':8, 'DA DMG':0, 'TA DMG':0,
+                     'Store TP':0,
+                     'PDL':0, 'PDL Trait':50,
+                     'Dual Wield':0, 'Magic Haste':0, 'Gear Haste':0, 'JA Haste':0,
+                     'Zanshin':0,
+                     'Weaponskill Damage':8, 'Weaponskill Bonus':0, 'Skillchain Bonus':12, 'ftp':0, 'TP Bonus':0, 'Weaponskill Accuracy':0,
+                     'Delay1':0, 'Delay2':0, 'Delay':0, 'Ammo Delay':0,
+                     'DMG1':0, 'DMG2':0, 'Ammo DMG':0,
+                     'Light Elemental Bonus':0, 'Dark Elemental Bonus':0, 'Fire Elemental Bonus':0,'Earth Elemental Bonus':0, 'Water Elemental Bonus':0, 'Wind Elemental Bonus':0,'Ice Elemental Bonus':0, 'Thunder Elemental Bonus':0,'Elemental Bonus':0, 'Weaponskill Accuracy':0,
+                     'Light Affinity':0, 'Dark Affinity':0, 'Fire Affinity':0,'Earth Affinity':0, 'Water Affinity':0, 'Wind Affinity':0,'Ice Affinity':0, 'Thunder Affinity':0,
+                     }
         # Add stats in from your subjob
         # This can get complicated if your main job has a better version of a trait that your subjob would give. For example: DRK main job has a higher "Attack Bonus" trait than subjob WAR. So when DRK/WAR, don't add the Attack bonus from /WAR traits.
         if subjob == "WAR": # Master Level 20 bonus stats from Lv53 WAR subjob
@@ -96,6 +114,18 @@ class set_gear:
             self.playerstats['INT'] += 7
             self.playerstats['MND'] += 7
             self.playerstats['CHR'] += 9
+        if subjob == "SAM": # Master Level 20 bonus stats from Lv53 SAM subjob
+            self.playerstats['STR'] += 12+7 # +7 from full-time Hasso (Assuming using 2h weapons for now, no DRK Savage Blade yet)
+            self.playerstats['DEX'] += 12
+            self.playerstats['VIT'] += 12
+            self.playerstats['AGI'] += 10
+            self.playerstats['INT'] += 9
+            self.playerstats['MND'] += 9
+            self.playerstats['CHR'] += 10
+            self.playerstats['Accuracy1'] += 10
+            self.playerstats['Accuracy2'] += 10
+            self.playerstats['JA Haste'] += 10
+
 
         # Count the number of set-bonus gear equipped.
         self.set_bonuses = {'Crit Rate':0, 'DEX':0, 'AGI':0, 'VIT':0, 'CHR':0, "Accuracy":0, "Ranged Accuracy":0, "Magic Accuracy":0, 'STR':0, 'VIT':0}

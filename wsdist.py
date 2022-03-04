@@ -85,7 +85,7 @@ def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy
 
     delay1 = gearset.playerstats['Delay1'] # Main-hand delay.
     delay2 = gearset.playerstats['Delay2'] if dual_wield else delay1 # Off-hand delay if dual wielding
-    dw = gearset.playerstats['Dual Wield'] if dual_wield else 0
+    dw = gearset.playerstats['Dual Wield']/100 if dual_wield else 0
     mdelay = (delay1+delay2)/2.*(1.-dw) if dual_wield else delay1 # Modified delay based on weapon delays and dual wield
 
     wsd = gearset.playerstats['Weaponskill Damage']/100. # Applies to first hit only
