@@ -83,8 +83,8 @@ class set_gear:
         if mainjob == "DRK":  # Master Level 20 Dark Knight stats
             # Ninja gets +8% WSD from job gifts
             self.playerstats = {'STR':117, 'DEX':113, 'VIT':113, 'AGI':110, 'INT':113, 'MND':101, 'CHR':101,
-                     'Scythe Skill':459, 'Dagger Skill':409, 'Sword Skill':424, 'Hand-to-Hand Skill':0, 'Great Katana Skill':0, 'Club Skill':404, 'Throwing Skill':0,
-                     'Ninjutsu Skill':0, 'Great Sword Skill':453, 'Marksmanship Skill':0, 'Dark Magic Skill':489, 'Axe Skill':424, 'Great Axe Skill':0
+                     'Scythe Skill':460, 'Dagger Skill':409, 'Sword Skill':424, 'Hand-to-Hand Skill':0, 'Great Katana Skill':0, 'Club Skill':404, 'Throwing Skill':0,
+                     'Ninjutsu Skill':0, 'Great Sword Skill':453, 'Marksmanship Skill':336, 'Dark Magic Skill':489, 'Axe Skill':424, 'Great Axe Skill':424,
                      'Accuracy1':22, 'Accuracy2':22, 'Attack1':202, 'Attack2':202,
                      'Ranged Accuracy':22, 'Ranged Attack':202,
                      'Magic Accuracy':30, 'Magic Attack':0, 'Magic Damage':0, 'Magic Accuracy Skill':0, 'Ninjutsu Magic Attack':0, 'Magic Crit Rate':0, 'Magic Burst Damage':0,
