@@ -210,10 +210,11 @@ Rufescent_Ring = {'Name': 'Rufescent Ring', 'STR':6, 'MND':6, 'Weaponskill Accur
 Shiva_Ring1 = {'Name': 'Shiva Ring +1', 'Name': 'Shiva Ring +1A', 'INT':9, 'Magic Attack':3,'Jobs':[]}
 Shiva_Ring2 = {'Name': 'Shiva Ring +1', 'Name': 'Shiva Ring +1B', 'INT':9, 'Magic Attack':3,'Jobs':[]}
 Shukuyu_Ring = {'Name': 'Shukuyu Ring', 'STR':7, 'Attack':15,'Jobs':[]}
+Sroda_Ring = {'Name': 'Sroda Ring', 'STR':15, 'DEX':-20, 'PDL':3}
 Weatherspoon_Ring = {'Name': 'Weatherspoon Ring +1', 'Light Elemental Bonus':11, 'Magic Accuracy':13,'Jobs':[]}
 
-rings = [Gere_Ring, Hetairoi_Ring, Shukuyu_Ring, Apate_Ring, Ilabrat_Ring, Regal_Ring, Epona_Ring, Petrov_Ring, Rufescent_Ring, Begrudging_Ring, Epaminondas_Ring, Mummu_Ring, Beithir_Ring, Dingir_Ring, Metamorph_Ring, Shiva_Ring1, Shiva_Ring2, Weatherspoon_Ring]
-rings2 = [Gere_Ring, Hetairoi_Ring, Shukuyu_Ring, Apate_Ring, Ilabrat_Ring, Regal_Ring, Epona_Ring, Petrov_Ring, Rufescent_Ring, Begrudging_Ring, Epaminondas_Ring, Mummu_Ring, Beithir_Ring, Dingir_Ring, Metamorph_Ring, Shiva_Ring1, Shiva_Ring2, Weatherspoon_Ring]
+rings = [Sroda_Ring, Gere_Ring, Hetairoi_Ring, Shukuyu_Ring, Apate_Ring, Ilabrat_Ring, Regal_Ring, Epona_Ring, Petrov_Ring, Rufescent_Ring, Begrudging_Ring, Epaminondas_Ring, Mummu_Ring, Beithir_Ring, Dingir_Ring, Metamorph_Ring, Shiva_Ring1, Shiva_Ring2, Weatherspoon_Ring]
+rings2 = [Sroda_Ring, Gere_Ring, Hetairoi_Ring, Shukuyu_Ring, Apate_Ring, Ilabrat_Ring, Regal_Ring, Epona_Ring, Petrov_Ring, Rufescent_Ring, Begrudging_Ring, Epaminondas_Ring, Mummu_Ring, Beithir_Ring, Dingir_Ring, Metamorph_Ring, Shiva_Ring1, Shiva_Ring2, Weatherspoon_Ring]
 
 Andartia_Critagi = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle AGI Crit Rate', 'AGI':30, 'Accuracy':20, 'Attack':20, 'Crit Rate':10, 'Jobs':['nin']}
 Andartia_Critdex = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle DEX Crit Rate', 'DEX':30, 'Accuracy':20, 'Attack':20, 'Crit Rate':10, 'Jobs':['nin']}
@@ -221,6 +222,7 @@ Andartia_DAagi = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle STR
 Andartia_DAdex = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle DEX DA', 'DEX':30, 'Accuracy':20, 'Attack':20, "DA":10, 'Jobs':['nin']}
 Andartia_DAstr = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle STR DA', 'STR':30, 'Accuracy':20, 'Attack':20, "DA":10, 'Jobs':['nin']}
 Andartia_Nuke = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle INT Magic Attack', 'INT':30, 'Magic Attack':10, 'Magic Accuracy':20, 'Magic Damage':20, 'Jobs':['nin']}
+Andartia_WSDstr_mdmg = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle STR WSD MDMG', 'INT':30, 'Weaponskill Damage':10, 'Magic Accuracy':20, 'Magic Damage':20, 'Jobs':['nin']}
 Andartia_STP = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle DEX Store TP', 'DEX':30, 'Accuracy':20, 'Attack':20, 'Store TP':10, 'Jobs':['nin']}
 Andartia_WSDagi = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle AGI WSD', 'AGI':30, 'Accuracy':20, 'Attack':20, 'Weaponskill Damage':10, 'Jobs':['nin']}
 Andartia_WSDdex = {'Name': 'Andartia\'s Mantle', 'Name2': 'Andartia\'s Mantle DEX WSD', 'DEX':30, 'Accuracy':20, 'Attack':20, 'Weaponskill Damage':10, 'Jobs':['nin']}
@@ -230,7 +232,7 @@ Ankou_Mantle_DAstr = {'Name': 'Ankou\'s Mantle', 'Name2': 'Ankou\'s Mantle STR D
 Ankou_Mantle_STPdex = {'Name': 'Ankou\'s Mantle', 'Name2': 'Ankou\'s Mantle DEX Store TP', 'DEX':30, 'Accuracy':20, 'Attack':20, 'Store TP':10, 'Jobs':['drk']}
 Smirtrios_DAstr = {'Name': 'Smirtrios\'s Mantle', 'Name2': 'Smirtrios\'s Mantle STR DA', 'STR':30, 'Attack':20, 'Accuracy':20, "DA":10, "Skillchain Bonus":3,'Jobs':['sam']}
 Smirtrios_WSDstr = {'Name': 'Smirtrios\'s Mantle', 'Name2': 'Smirtrios\'s Mantle STR WSD', 'STR':30, 'Attack':20, 'Accuracy':20, 'Weaponskill Damage':10, "Skillchain Bonus":3,'Jobs':['sam']}
-capes = [Andartia_DAdex, Andartia_DAstr, Andartia_DAagi, Andartia_Critagi, Andartia_Critdex, Andartia_WSDstr, Andartia_WSDdex, Andartia_WSDagi, Andartia_Nuke]
+capes = [Andartia_DAdex, Andartia_DAstr, Andartia_DAagi, Andartia_Critagi, Andartia_Critdex, Andartia_WSDstr, Andartia_WSDdex, Andartia_WSDagi, Andartia_Nuke, Andartia_WSDstr_mdmg]
 
 Eschan_Stone = {'Name': 'Eschan Stone', 'Accuracy':15, 'Ranged Accuracy':15, 'Attack':15, 'Ranged Attack':15, 'Magic Accuracy':7, 'Magic Attack':7,'Jobs':[]}
 Fotia_Belt = {'Name': 'Fotia Belt', 'Weaponskill Accuracy': 10, 'ftp': 25./256.,'Jobs':[]}

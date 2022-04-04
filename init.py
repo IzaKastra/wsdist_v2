@@ -78,8 +78,8 @@ geo_fury = geo['Fury']['Attack'][0] + nbubble*geo['Fury']['Attack'][1]
 
 
 geo_on = False # Use GEO buffs (defined above)?
-cor_on = False # Use COR buffs (defined above)?
-brd_on = False # Use BRD buffs (defined above)?
+cor_on = True # Use COR buffs (defined above)?
+brd_on = True # Use BRD buffs (defined above)?
 
 # Define your debuffs.
 dia_potency = 2 # Dia potency? (0, 1, 2, 3, 4)

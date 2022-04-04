@@ -63,7 +63,7 @@ class set_gear:
         if mainjob == "NIN":  # Master Level 20 Ninja stats
             # Ninja gets +5% WSD from job gifts
             self.playerstats = {'STR':113, 'DEX':115, 'VIT':113, 'AGI':115, 'INT':110, 'MND':101, 'CHR':104,
-                     'Katana Skill':460, 'Dagger Skill':414, 'Sword Skill':409, 'Hand-to-Hand Skill':0, 'Great Katana Skill':404, 'Club Skill':316, 'Throwing Skill':440,
+                     'Katana Skill':460, 'Dagger Skill':414, 'Sword Skill':409, 'Hand-to-Hand Skill':336, 'Great Katana Skill':404, 'Club Skill':336, 'Throwing Skill':460,
                      'Ninjutsu Skill':489,
                      'Accuracy1':56, 'Accuracy2':56, 'Attack1':70, 'Attack2':70,
                      'Ranged Accuracy':56, 'Ranged Attack':70,

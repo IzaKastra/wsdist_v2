@@ -19778,6 +19778,7 @@
 26218    Beithir ring
 26219    Naji's loop
 26220    crepuscular ring
+26221    Sroda Ring
 26222    seabird's ring
 26223    patissiere's ring
 26224    confectioner's ring
