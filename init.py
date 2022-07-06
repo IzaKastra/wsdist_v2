@@ -25,6 +25,11 @@ shortname = "BladeShun" # Shortened weapon skill name. Used as filenames for out
 tp1_list = [1000,1500,2000] # Minimum TP values to check
 tp2_list = [1300,1800,2300] # Maximum TP values to check. Same length as "tp1_list"
 
+nuke = False # Set to true to test only nukes. The code will return the best nuking set, but it currently fails to run to 100% completion. This is fine since it still finds the best set and prints it. The code just fails to plot it.
+spell = "Doton: San"
+burst = False
+futae = False
+
 
 # Starting gearset for simulations.
 starting_gearset = {
@@ -52,7 +57,7 @@ fitn = 2 # Number of slots to swap simultaneously (up to 3). More = WAY slower.
          # fitn=3 is like 15mins per iteration, so ~45-60 minutes per weapon skill set.
          # fitn=2 is plenty good. Takes maybe 2~3 mins per weapon skill set
 
-ntrials = 100_000 # Number of simulations to be completed to build the final distribution.
+ntrials = 100_000 if not nuke else 0 # Number of simulations to be completed to build the final distribution.
 
 savetext = True # Save the output text file?
 save_img = True # Save the output distribution image?
@@ -78,8 +83,8 @@ geo_fury = geo['Fury']['Attack'][0] + nbubble*geo['Fury']['Attack'][1]
 
 
 geo_on = False # Use GEO buffs (defined above)?
-cor_on = True # Use COR buffs (defined above)?
-brd_on = True # Use BRD buffs (defined above)?
+cor_on = False # Use COR buffs (defined above)?
+brd_on = False # Use BRD buffs (defined above)?
 
 # Define your debuffs.
 dia_potency = 2 # Dia potency? (0, 1, 2, 3, 4)

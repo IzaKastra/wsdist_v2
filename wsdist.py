@@ -22,6 +22,7 @@ from weaponskill_scaling import *
 from check_weaponskill_bonus import *
 from multiattack_check import *
 from pdif import *
+from nuking import *
 
 from get_tp import get_tp
 from gearsets import *
@@ -33,16 +34,16 @@ import random
 class TP_Error(Exception):
     pass
 
-
-def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final=False):
+def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy_agi, enemy_int, enemy_mdb, attack_cap, buffs, equipment, final=False, nuke=False, spell=False, burst=False, futae=False,):
     #
     # Use the player and enemy stats to calculate weapon skill damage.
     # This function works, but needs to be cleaned up. There is too much going on within it.
     # It would be easier to rewrite the entire code and simply borrow from what I already have.
     #
-    if tp < 1000:
-        print(f'TP must be greater than 1000 to use a Weapon skill; TP = {tp}')
-        raise TP_Error
+    if not nuke:
+        if tp < 1000:
+            print(f'TP must be greater than 1000 to use a Weapon skill; TP = {tp}')
+            raise TP_Error
 
     # Save the main and sub weapon names for later.
     # Used to check if giving weapon skill damage bonuses on things like Gokotai (if "Gokotai" in main_wpn_name)
@@ -105,6 +106,8 @@ def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy
 
     player_mab = gearset.playerstats['Magic Attack']
     player_magic_damage = gearset.playerstats['Magic Damage']
+    ninjutsu_damage = gearset.playerstats['Ninjutsu Damage']
+
 
     dStat = ['STR', 0] # Part of the fix for Crepsecular Knife's CHR bonus. Needed to first assign a base dStat bonus. In this case I just used STR with 0 bonus to apply to all WSs, and Crepsecular just changes this to ['CHR', 0.03]. Utu Grip changes this to ['DEX', 0.10]
     if sub_wpn_name == "Crepuscular Knife":
@@ -112,6 +115,26 @@ def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy
     elif sub_wpn_name == "Utu Grip":
         dStat = ['DEX', 3]
     dStat[1] /= 100.
+
+    if nuke:
+
+        spells = {"Katon": "Fire",
+                  "Suiton": "Water",
+                  "Raiton": "Thunder",
+                  "Doton": "Earth",
+                  "Huton": "Wind",
+                  "Hyoton": "Ice"}
+        tiers = {"Ichi": 1,
+                 "Ni": 2,
+                 "San": 3}
+
+        element = spells[spell.split(":")[0]]
+        tier = tiers[spell.split(" ")[-1]]
+
+        damage = nuking(tier, element, gearset, player_int, player_mab, player_magic_damage, enemy_int, enemy_mdb, ninjutsu_damage, futae, burst)
+
+        return(damage,0)
+
 
     # Check weapon + weapon skill synergy for things like bonus weapon skill damage.
     # See "check_weaponskill_bonuses.py"
@@ -338,7 +361,7 @@ def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy
 ==========================================================================================
 '''
 
-def test_set(WS_name, buffs, equipment, gearset, tp1, tp2, attack_cap=False, final=False):
+def test_set(WS_name, buffs, equipment, gearset, tp1, tp2, attack_cap=False, final=False, nuke=False, spell=False, burst=False, futae=False):
     if final:
         if savetext:
             with open(f'{savepath}{shortname}{output_file_suffix}_{tp1}_{tp2}.txt', 'w') as ofile:
@@ -364,10 +387,11 @@ def test_set(WS_name, buffs, equipment, gearset, tp1, tp2, attack_cap=False, fin
             # Define your target to simulate against. Toads have 3 possible options, but you could easily code something like Kin and only have one set of stats to pull from.
             enemy_def = enemy['Defense']
             enemy_vit = enemy['VIT']
+            enemy_int = enemy['INT']
             enemy_agi = enemy['AGI']
             enemy_mdb = enemy['Magic Defense']
             enemy_eva = enemy['Evasion']
-            values = weaponskill(WS_name, gearset, tp, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final) # values = [damage, TP_return]
+            values = weaponskill(WS_name, gearset, tp, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_int, enemy_mdb, attack_cap, buffs, equipment, final) # values = [damage, TP_return]
             damage.append(values[0]) # Append the damage from each simulation to a list. Plot this list as a histogram later.
             tp_return.append(values[1])
 
@@ -378,28 +402,32 @@ def test_set(WS_name, buffs, equipment, gearset, tp1, tp2, attack_cap=False, fin
 
         enemy_def = enemy['Defense']
         enemy_vit = enemy['VIT']
+        enemy_int = enemy['INT']
         enemy_agi = enemy['AGI']
         enemy_mdb = enemy['Magic Defense']
         enemy_eva = enemy['Evasion']
-        damage, _ = weaponskill(WS_name, gearset, tp, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_mdb, attack_cap, buffs, equipment, final)
+        damage, _ = weaponskill(WS_name, gearset, tp, enemy_def, enemy_eva, enemy_vit, enemy_agi, enemy_int, enemy_mdb, attack_cap, buffs, equipment, final, nuke, spell, burst, futae)
         return(damage)
 
+
+
+# if __name__ == "__main__":
 
 
 from init import *
 
 profile = False # Profile the code (check how long each function call takes)
 if profile:
-    # If you want to profile the code, then start here.
     import cProfile, pstats
     profiler = cProfile.Profile()
     profiler.enable()
 
 
-
-
-
+################################################
+################################################
 for o in range(len(tp1_list)):
+    if nuke and o>1:
+        continue
 
     Best_Gearset =  starting_gearset.copy()
     for k in Best_Gearset:
@@ -407,6 +435,7 @@ for o in range(len(tp1_list)):
         name2 = Best_Gearset[k].get('Name2','None')
         if name2 == 'None':
             Best_Gearset[k].update({'Name2': Best_Gearset[k]['Name']})
+
 
     tp1 = tp1_list[o]
     tp2 = tp2_list[o]
@@ -484,9 +513,6 @@ for o in range(len(tp1_list)):
                                 if b3.get("Name2",'None') == 'None':
                                     b3.update({'Name2': b3['Name']})
 
-                                # From here on: there are a lot of try/except blocks. This is because augmented pieces need a "Name2" and a "Name" dictionary key to distinguish between different augment paths.
-                                # We could remove all of these try/except blocks if EVERY piece of gear had a "Name2" dictionary key. Since the code works as is, I'll fix this later.
-
                                 # Save the names of the first of the three item swaps and the item currently equipped in its position
                                 swap_item1 = b['Name2'] # New item being tested
                                 equipped_item1 = Best_Gearset[slot1]['Name2'] # Old item
@@ -552,6 +578,24 @@ for o in range(len(tp1_list)):
                                     if swap_item3 == Best_Gearset[names[i3+1]]['Name2']:
                                         continue
 
+                                # Don't equip two of the same weapon...
+                                if names[i3] == 'main' or names[i3] == 'sub':
+                                    if swap_item3 == Best_Gearset['sub']['Name2']:
+                                        continue
+                                    if swap_item3 == Best_Gearset['main']['Name2']:
+                                        continue
+                                if names[i2] == 'main' or names[i2] == 'sub':
+                                    if swap_item2 == Best_Gearset['sub']['Name2']:
+                                        continue
+                                    if swap_item2 == Best_Gearset['main']['Name2']:
+                                        continue
+                                if names[i] == 'main' or names[i] == 'sub':
+                                    if swap_item1 == Best_Gearset['sub']['Name2']:
+                                        continue
+                                    if swap_item1 == Best_Gearset['main']['Name2']:
+                                        continue
+
+
 
                                 if slot1 != slot2:
                                     if swap_item1 == swap_item2:
@@ -563,8 +607,8 @@ for o in range(len(tp1_list)):
                                     if swap_item2 == swap_item3:
                                         continue
 
-                                # # If the code is checking both ring1 and ring2 slots at the same time, make sure it isn't trying the same ring in both slots (don't place the same Rare item in two different slots at the same time)
-                                # if (names[i] == 'ring1' and names[i2] == 'ring2') or (names[i2] == 'ring1' and names[i] == 'ring2'):
+                                # If the code is checking both ring1 and ring2 slots at the same time, make sure it isn't trying the same ring in both slots (don't place the same Rare item in two different slots at the same time)
+                                # if (names[i] == 'main' and names[i2] == 'sub'):
                                 #     if swap_item1 == swap_item2:
                                 #         continue
                                 #
@@ -581,7 +625,7 @@ for o in range(len(tp1_list)):
 
                                 # Now test the gearset by calculating its average damage.
                                 # Average damage is not necessarily appropriate, but it's simple and allows the results to be more easily compared to the well known spreadsheets.
-                                damage = int(test_set(WS_name, buffs, new_set, test_Gearset, tp1, tp2, attack_cap)) # Test the set and return its damage as a single number
+                                damage = int(test_set(WS_name, buffs, new_set, test_Gearset, tp1, tp2, attack_cap,False,nuke, spell, burst, futae)) # Test the set and return its damage as a single number
 
                                 # If the damage returned after swapping those 1~2 pieces is higher than the previous best, then run this next bit of code to print to the terminal the swap that was performed and the change in damage observed.
                                 if damage > best_damage:
@@ -624,7 +668,7 @@ for o in range(len(tp1_list)):
     best_set = set_gear(buffs, Best_Gearset) # Create a class from the best gearset
 
     # Run the simulator once more, but with "final=True" to tell the code to create a proper distribution.
-    test_set(WS_name, buffs, Best_Gearset, best_set, tp1, tp2, attack_cap, True)
+    test_set(WS_name, buffs, Best_Gearset, best_set, tp1, tp2, attack_cap, True ,nuke, spell, burst, futae)
 
 if profile:
     # If you wanted to profile the code, then disable the profile at this point and print the results.

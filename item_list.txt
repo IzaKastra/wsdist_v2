@@ -19165,6 +19165,7 @@
 23800    cancrine apron
 23801    cancrine apron +1
 25415    republican platinum medal
+25416    sibyl scarf
 25417    warrior's bead necklace
 25418    warrior's bead necklace +1
 25419    warrior's bead necklace +2
