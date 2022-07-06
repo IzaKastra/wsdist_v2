@@ -117,6 +117,7 @@ def weaponskill(ws_name, gearset, tp, enemy_defense, enemy_eva, enemy_vit, enemy
     dStat[1] /= 100.
 
     if nuke:
+        player_mab += gearset.playerstats['Ninjutsu Magic Attack']
 
         spells = {"Katon": "Fire",
                   "Suiton": "Water",
@@ -579,20 +580,20 @@ for o in range(len(tp1_list)):
                                         continue
 
                                 # Don't equip two of the same weapon...
-                                if names[i3] == 'main' or names[i3] == 'sub':
-                                    if swap_item3 == Best_Gearset['sub']['Name2']:
+                                if names[i] == 'main' or names[i] == 'sub':
+                                    if swap_item1 == Best_Gearset['sub']['Name2']:
                                         continue
-                                    if swap_item3 == Best_Gearset['main']['Name2']:
+                                    if swap_item1 == Best_Gearset['main']['Name2']:
                                         continue
                                 if names[i2] == 'main' or names[i2] == 'sub':
                                     if swap_item2 == Best_Gearset['sub']['Name2']:
                                         continue
                                     if swap_item2 == Best_Gearset['main']['Name2']:
                                         continue
-                                if names[i] == 'main' or names[i] == 'sub':
-                                    if swap_item1 == Best_Gearset['sub']['Name2']:
+                                if names[i3] == 'main' or names[i3] == 'sub':
+                                    if swap_item3 == Best_Gearset['sub']['Name2']:
                                         continue
-                                    if swap_item1 == Best_Gearset['main']['Name2']:
+                                    if swap_item3 == Best_Gearset['main']['Name2']:
                                         continue
 
 

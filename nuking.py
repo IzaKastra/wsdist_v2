@@ -39,4 +39,9 @@ def nuking(tier,element,gearset,player_INT, player_matk, mdmg, enemy_INT,enemy_m
     d *= burst_bonus_multiplier
     d *= elemental_damage_bonus
 
+    if futae:
+        hands = gearset.equipped['hands']
+        if "Hattori Tekko" in hands:
+            d *= 1.24
+            
     return(d)

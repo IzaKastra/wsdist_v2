@@ -57,7 +57,7 @@ fitn = 2 # Number of slots to swap simultaneously (up to 3). More = WAY slower.
          # fitn=3 is like 15mins per iteration, so ~45-60 minutes per weapon skill set.
          # fitn=2 is plenty good. Takes maybe 2~3 mins per weapon skill set
 
-ntrials = 100_000 if not nuke else 0 # Number of simulations to be completed to build the final distribution.
+ntrials = 10_000 if not nuke else 0 # Number of simulations to be completed to build the final distribution.
 
 savetext = True # Save the output text file?
 save_img = True # Save the output distribution image?

@@ -56,8 +56,8 @@ Alber_Strap = {'Name': 'Alber Strap', 'Type': 'Grip', 'Magic Attack':7, "DA":2}
 Rigorous_Grip = {'Name': 'Rigorous Grip +1', 'Name2': 'Rigorous Grip +1 R15', 'STR':4+15, 'Attack':13+30, 'Accuracy':3}
 Utu_Grip = {'Name': 'Utu Grip', 'Type': 'Grip', 'Accuracy':30, 'Attack':30}
 
-mains = [Heishi, Kannagi, Kikoku, Nagi, Gokotai,MalevolenceA]
-subs = [Ternion, Kunimitsu, Gleti_Knife, Tauret, Gokotai, Crepuscular_Knife,MalevolenceB]
+mains = [Heishi, Kannagi, Kikoku, Nagi, Gokotai, MalevolenceA, Tauret]
+subs = [Ternion, Kunimitsu, Gleti_Knife, Tauret, Gokotai, Crepuscular_Knife, MalevolenceB]
 grips = [Alber_Strap, Rigorous_Grip]
 
 
@@ -96,6 +96,7 @@ Ratri_Sallet = {'Name': 'Ratri Sallet +1', 'STR':40, 'DEX':33, 'VIT':26, 'AGI':2
 Ryuo_Somen_A = {'Name': 'Ryuo Somen +1', 'Name2': 'Ryuo Somen +1 A', 'STR':21+12, 'DEX':17+12, 'VIT':14, 'AGI':20, 'INT':11, 'MND':11, 'CHR':11, 'Accuracy':35+20,'Ranged Accuracy':35,'Gear Haste':7,'Store TP':7,'Dual Wield':9,'Jobs':[]}
 Sakpata_Helm = {'Name': 'Sakpata\'s Helm', 'Name2': 'Sakpata\'s Helm R15', 'STR':33,'DEX':20,"VIT":40,"AGI":21,'INT':19,'MND':23,'CHR':21,'Accuracy':40+5,'Magic Accuracy':40+5,'Attack':40+20,'Gear Haste':4,"DA":5,'PDL':5,'DA DMG':10}
 Sulevia_Mask = {'Name': 'Sulevia\'s Mask +2', 'STR':33,'DEX':19,"VIT":40,"AGI":12,'INT':11,'MND':22,'CHR':22,'Accuracy':44,'Attack':48,'Gear Haste':3,'Store TP':10}
+Hattori_Zukin = {'Name': 'Hattori Zukin +1', 'STR':19,'DEX':31,'VIT':18,'AGI':22,'INT':17,'MND':17,'CHR':17,'Gear Haste':10,'Dual Wield':7}
 heads = [Adhemar_Bonnet_A, Adhemar_Bonnet_B, Hachiya_Hatsuburi, Mochizuki_Hatsuburi, Malignance_Chapeau, Kendatsuba_Jinpachi, Mummu_Bonnet, Nyame_Helm, Mpaca_Cap, Blistering_Sallet]
 
 Abyssal_Beads = {'Name': 'Abyssal Beads +2', 'Name2':'Abyssal Beads +2 R25','Accuracy':15,'Magic Accuracy':15,'Attack':40,'Store TP':0+7,'STR':0+25,'Crit Rate':4,'PDL':0+10,'Jobs':['drk']}
@@ -161,6 +162,7 @@ Sakpata_Breastplate = {'Name': 'Sakpata\'s Breastplate', 'Name2': 'Sakpata\'s Br
 Samnuha_Coat = {'Name': 'Samnuha Coat', 'STR':26, 'DEX':33, 'VIT':23, 'AGI':29, 'INT':20, 'MND':20, 'CHR':20, 'Accuracy':23, 'Magic Accuracy':23+15, 'Magic Attack':20+15, 'Gear Haste':4, 'Dual Wield':5, 'Magic Burst Damage II': 8,'Jobs':[]}
 Sulevia_Platemail = {'Name': 'Sulevia\'s Platemail +2', 'STR':41,'DEX':24,"VIT":41,"AGI":16,'INT':16,'MND':27,'CHR':27,'Accuracy':46,'Attack':50,'Gear Haste':1}
 Tatenashi_Haramaki = {'Name': 'Tatenashi Haramaki', 'Name2': 'Tatenashi Haramaki R15', 'STR':28+10, 'DEX':24+10, 'VIT':28+10, 'AGI':19+10, 'INT':19+10, 'MND':19+10, 'CHR':19+10,'Accuracy':35+30,'Attack':35,'Gear Haste':3,'Crit Rate':6,'Store TP':8,"TA":0+5,'Jobs':[]}
+Hattori_Ningi = {'Name': 'Hattori Ningi +1', 'STR':30,'DEX':37,'VIT':24,'AGI':28,'INT':21,'MND':21,'CHR':21,'Gear Haste':4,'Crit Rate':6, 'Accuracy':24, 'Attack':24}
 bodies = [Kendatsuba_Samue, Adhemar_Jacket_A, Adhemar_Jacket_B, Malignance_Tabard, Nyame_Mail, Samnuha_Coat, Gyve_Doublet, Abnoba_Kaftan, Mpaca_Doublet, Tatenashi_Haramaki, Ryuo_Domaru_A, Agony_Jerkin]
 
 Adhemar_Wristbands_A = {'Name': 'Adhemar Wristbands +1', 'Name2': 'Adhemar Wristbands +1 A', 'STR':15, 'DEX':44+12, 'VIT':29, 'AGI':7+12, 'INT':12, 'MND':30, 'CHR':17, 'Accuracy':32+20, 'Ranged Accuracy':32, "TA":4, 'Store TP':7, 'Gear Haste':5, 'Jobs':[]}
@@ -185,7 +187,8 @@ Ryuo_Tekko_D = {'Name': 'Ryuo Tekko +1', 'Name2': 'Ryuo Tekko +1 D', 'STR':12, '
 Sakpata_Gauntlets = {'Name': 'Sakpata\'s Gauntlets', 'Name2': 'Sakpata\'s Gauntlets R15', 'STR':24,'DEX':35,"VIT":46,"AGI":0,'INT':14,'MND':33,'CHR':26,'Accuracy':40+5,'Magic Accuracy':40+5,'Attack':40+20,'Gear Haste':4,"DA":6,'PDL':6,'Store TP':5}
 Sulevia_Gauntlets = {'Name': 'Sulevia\'s Gauntlets +2', 'STR':23,'DEX':34,"VIT":45,"AGI":0,'INT':6,'MND':32,'CHR':27,'Accuracy':43,'Attack':47,'Gear Haste':3,"DA":6}
 Tatenashi_Gote = {'Name': 'Tatenashi Gote', 'Name2': 'Tatenashi Gote R15', 'STR':8+10, 'DEX':40+10, 'VIT':32+10, 'AGI':7+10, 'INT':6+10, 'MND':23+10, 'CHR':16+10,'Accuracy':21+40,'Gear Haste':4,'Store TP':7,"TA":0+4, 'Jobs':[]}
-hands = [Adhemar_Wristbands_A, Adhemar_Wristbands_B, Mochizuki_Tekko, Mummu_Wrists, Malignance_Gloves, Kendatsuba_Tekko, Nyame_Gauntlets, Mpaca_Gloves, Tatenashi_Gote, Ryuo_Tekko_A, Ryuo_Tekko_D]
+Hattori_Tekko = {'Name': 'Hattori Tekko +1', 'STR':12,'DEX':45,'VIT':29,'AGI':14,'INT':12,'MND':30,'CHR':17,'Gear Haste':5,'Accuracy':23,'Ninjutsu Magic Attack':14}
+hands = [Adhemar_Wristbands_A, Adhemar_Wristbands_B, Mochizuki_Tekko, Mummu_Wrists, Malignance_Gloves, Kendatsuba_Tekko, Nyame_Gauntlets, Mpaca_Gloves, Tatenashi_Gote, Ryuo_Tekko_A, Ryuo_Tekko_D,Hattori_Tekko]
 
 Apate_Ring = {'Name': 'Apate Ring', 'STR':6, 'DEX':6, 'AGI':6, 'Store TP':3,'Jobs':[]}
 Archon_Ring = {'Name': 'Archon Ring', 'Dark Elemental Bonus':5,'Jobs':[]}
@@ -277,6 +280,7 @@ Samnuha_Tights = {'Name': 'Samnuha Tights', 'STR':38+10, 'DEX':6+10, 'VIT':15, '
 Sulevia_Flanchard = {'Name': 'Sulevia\'s Flanchard +2', 'STR':47,'DEX':0,"VIT":33,"AGI":14,'INT':24,'MND':20,'CHR':18,'Accuracy':45,'Attack':49,'Gear Haste':2,"TA":4}
 Tatenashi_Haidate = {'Name': 'Tatenashi Haidate', 'Name2': 'Tatenashi Haidate R15', 'STR':45+10, 'DEX':0+10, 'VIT':25+10, 'AGI':15+10, 'INT':23+10, 'MND':12+10, 'CHR':10+10,'Accuracy':0+60,'Attack':31,'Gear Haste':5,'Store TP':7,"TA":0+3,'Jobs':[]}
 Wakido_Haidate = {'Name': 'Wakido Haidate +3', 'STR':44, 'DEX':0, 'VIT':29, 'AGI':25, 'INT':37, 'MND':26, 'CHR':20, 'Accuracy':49, 'Attack':40, 'Ranged Attack':40, 'Gear Haste':5, 'Store TP':9, 'Weaponskill Damage':10,'Jobs':[]}
+Hattori_Hakama = {'Name': 'Hattori Hakama +1', 'STR':29,'DEX':0,'VIT':16,'AGI':20,'INT':30,'MND':17,'CHR':11,'Gear Haste':8,'Katana Skill':23,'Accuracy':20}
 legs = [Kendatsuba_Hakama, Adhemar_Kecks_A, Adhemar_Kecks_B, Mochizuki_Hakama, Samnuha_Tights, Jokushu_Haidate, Malignance_Tights, Mummu_Kecks, Gyve_Trousers, Hizamaru_Hizayoroi, Nyame_Flanchard, Mpaca_Hose, Tatenashi_Haidate, Ryuo_Hakama_A, Rao_Haidate_B]
 
 Adhemar_Gamashes_A = {'Name': 'Adhemar Gamashes +1', 'Name2': 'Adhemar Gamashes +1 A', 'STR':15, 'DEX':23+12, 'VIT':8, 'AGI':42+12, "INT":0, 'MND':11, 'CHR':25, 'Accuracy':20, 'Attack':34, 'Ranged Attack':34, 'Magic Attack':35, 'Gear Haste':4, 'Crit Rate':4, 'Jobs':[]}
@@ -301,6 +305,7 @@ Ryuo_SuneAte_D = {'Name': 'Ryuo Sune-Ate +1', 'Name2': 'Ryuo Sune-ate +1 D', 'ST
 Sakpata_Leggings = {'Name': 'Sakpata\'s Leggings', 'Name2': 'Sakpata\'s Leggings R15', 'STR':29,'DEX':20,"VIT":30,"AGI":35,'INT':0,'MND':19,'CHR':32,'Accuracy':40+5,'Magic Accuracy':40+5,'Attack':40+20,'Gear Haste':2,"DA":4,'PDL':4}
 Sulevia_Leggings = {'Name': 'Sulevia\'s Leggings +2', 'STR':29,'DEX':19,"VIT":29,"AGI":26,'INT':0,'MND':18,'CHR':32,'Accuracy':42,'Attack':46,'Gear Haste':1,'Weapon Skill Damage':7}
 Tatenashi_SuneAte = {'Name': 'Tatenashi Sune-ate', 'Name2': 'Tatenashi Sune-ate R15', 'STR':16+10, 'DEX':19+10, 'VIT':16+10, 'AGI':32+10, 'INT':0+10, 'MND':5+10, 'CHR':19+10,'Accuracy':0+60,'Gear Haste':3,'Store TP':7,"TA":0+3, 'Jobs':[]}
+Hattori_Kyahan = {'Name': 'Hattori Kyahan +1', 'STR':14,'DEX':26,'VIT':12,'AGI':39,'INT':0,'MND':12,'CHR':30,'Gear Haste':5}
 feet = [Mochizuki_Kyahan, Adhemar_Gamashes_A, Adhemar_Gamashes_B, Malignance_Boots, Mummu_Gamashes, Kendatsuba_Sune_Ate, Nyame_Sollerets, Mpaca_Boots, Tatenashi_SuneAte, Ryuo_SuneAte_D, Rao_SuneAte_D]
 
 
